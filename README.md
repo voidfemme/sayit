@@ -34,7 +34,7 @@ tokio = { version = "1.0", features = ["full"] }
 Run the utility using the following command:
 
 ```sh
-cargo run -- [OPTIONS]
+sayit [OPTIONS]
 ```
 
 ### Options
@@ -57,19 +57,19 @@ cargo run -- [OPTIONS]
 ### Convert Text from a File
 
 ```sh
-cargo run -- --input-file input.txt --output-file output.mp3 --voice nova --format mp3 --speed 1.0
+sayit --input-file input.txt --output-file output.mp3 --voice nova --format mp3 --speed 1.0
 ```
 
 ### Convert Text from Clipboard
 
 ```sh
-cargo run -- --clipboard --output-file output.flac --voice echo --format flac
+sayit --clipboard --output-file output.flac --voice echo --format flac
 ```
 
 ### Convert Text from Stdin
 
 ```sh
-echo "Hello, world!" | cargo run -- --use-stdin --output-file output.opus --voice shimmer --format opus
+echo "Hello, world!" | sayit --use-stdin --output-file output.opus --voice shimmer --format opus
 ```
 
 ## Code Explanation
